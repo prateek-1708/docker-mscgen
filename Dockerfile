@@ -23,9 +23,7 @@ RUN cd '/tmp' && \
     curl -fsSL "http://www.mcternan.me.uk/mscgen/software/mscgen-static-0.20.tar.gz" -o '/tmp/mscgen.tar.gz' && \
     tar -zxvf '/tmp/mscgen.tar.gz' && \
     rm -f '/tmp/mscgen.tar.gz' && \
-    cd / && \
     mkdir -p /mscgen  && \
-    ls / && \
     mv /tmp/mscgen-0.20/* /mscgen/
 
 WORKDIR /mscgen
